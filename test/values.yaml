@@ -1,0 +1,7 @@
+env: test
+gitServerKeysVolume: 
+  hostPath: 
+    path: /git-server/keys
+    type: Directory
+  
+
