@@ -12,6 +12,9 @@ service:
 
 affinity: {}
 
+# Create a volume where all trusted public keys are stored in a folder.  
 gitServerKeysVolume: {}
-
-
+# All git repositories created
+repos:
+  - services-git-server
+  - git-project
