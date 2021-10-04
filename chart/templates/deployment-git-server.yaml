@@ -29,6 +29,14 @@ spec:
           limits:
             cpu: 100m
             memory: 100Mi
+        readinessProbe:
+          exec:
+            command:
+            - nc 
+            - -z 
+            - -v 
+            - "localhost"
+            - "22"
         volumeMounts:
         - mountPath: /git-server/keys
           name: git-server-keys

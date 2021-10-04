@@ -4,6 +4,6 @@ nodes:
 - role: control-plane
   # add a mount from /path/to/my/files on the host to /files on the node
   extraMounts:
-  - hostPath: /home/jacob/services-git-server/keys
+  - hostPath: /home/runner/services-git-server/keys
     containerPath: /git-server/keys
     propagation: HostToContainer
