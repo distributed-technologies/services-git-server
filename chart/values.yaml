@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 3
 
 image:
   repository: ghcr.io/distributed-technologies/services-git-server
@@ -14,6 +14,8 @@ affinity: {}
 
 # Create a volume where all trusted public keys are stored in a folder.  
 gitServerKeysVolume: {}
+# The volume for holding the repos. Required for HA.
+gitServerReposVolume: {}
 # All git repositories created
 repos:
   - services-git-server

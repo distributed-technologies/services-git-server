@@ -3,5 +3,7 @@ gitServerKeysVolume:
   hostPath: 
     path: /git-server/keys
     type: Directory
+gitServerReposVolume:
+  emptyDir: {}
   
 
