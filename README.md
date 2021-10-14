@@ -1,2 +1,4 @@
 # services-git-server
-A git server helm chart
+This helm chart sets up a git server through a ssh server and exposes it with a Kubernetes service. 
+
+To make the Git server HA, mount a shared PVC e.g. in Ceph and increase the `replicaCount`. 
